@@ -50,6 +50,7 @@ Contributions are welcome! :)
 
 ## Donate
 `bitcoin:1EAqBrcWKGS3VG1ktUxCje2E6hYTQRHRRV`
+
 ![donate](https://github.com/adriexnet/nativescript-easy-notification-banner/blob/master/screenshots/donate.png?raw=true)
 
 also [greenaddress](https://greenaddress.it/pay/GAkvTDFTMKQmXYSc2BddzSEAWdHhx/)
