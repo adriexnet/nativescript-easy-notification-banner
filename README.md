@@ -2,7 +2,7 @@
 
 A way to keep the user informed about what happens in your application
 
-![Sample iOS](screenshots/ios.gif)
+![Sample iOS](https://github.com/adriexnet/nativescript-easy-notification-banner/blob/master/screenshots/ios.gif?raw=true)
 
 
 
@@ -50,7 +50,8 @@ Contributions are welcome! :)
 
 ## Donate
 `bitcoin:1EAqBrcWKGS3VG1ktUxCje2E6hYTQRHRRV`
-![donate](screenshots/donate.png)
+![donate](https://github.com/adriexnet/nativescript-easy-notification-banner/blob/master/screenshots/donate.png?raw=true)
+
 also [greenaddress](https://greenaddress.it/pay/GAkvTDFTMKQmXYSc2BddzSEAWdHhx/)
 
 ## License
