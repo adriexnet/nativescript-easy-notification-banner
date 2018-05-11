@@ -1,0 +1,1 @@
+pod "RMessage", :git => 'https://github.com/adriexnet/RMessage.git'

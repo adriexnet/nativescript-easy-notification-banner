@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page" xmlns:ui="nativescript-notification-banner">
+  <Page.actionBar>
+    <ActionBar title="NativeScript NotificationBanner" icon="">
+    </ActionBar>
+  </Page.actionBar>
+  <ScrollView>
+    <StackLayout class="p-20">
+      <Button text="Alert Info" tap="{{showInfo}}" class="p-20" />
+      <Button text="Alert Success" tap="{{showSuccess}}" class="p-20" />
+      <Button text="Alert Warning" tap="{{showWarning}}" class="p-20" />
+      <Button text="Alert Error" tap="{{showError}}" class="p-20" />
+    </StackLayout>
+  </ScrollView>
+</Page>
