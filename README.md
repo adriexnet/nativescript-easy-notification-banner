@@ -50,7 +50,7 @@ Contributions are welcome! :)
 
 ## Donate
 `bitcoin:1EAqBrcWKGS3VG1ktUxCje2E6hYTQRHRRV`
-![donate](assets/donate.png)
+![donate](screenshots/donate.png)
 also [greenaddress](https://greenaddress.it/pay/GAkvTDFTMKQmXYSc2BddzSEAWdHhx/)
 
 ## License
