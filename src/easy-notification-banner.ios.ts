@@ -8,13 +8,62 @@ declare const
   RMessageTypeWarning: any,
   RMessageTypeError: any,
   RMessageDurationAutomatic: any,
-  RMessagePositionNavBarOverlay: any
+  RMessagePositionTop: any,
+  RMessagePositionNavBarOverlay: any,
+  RMessagePositionBottom: any
 ;
 
+export enum Position {
+  TOP = RMessagePositionTop,
+  NAV_BAR_OVERLAY = RMessagePositionNavBarOverlay,
+  BOTTOM = RMessagePositionBottom,
+}
+
 export class EasyNotificationBanner extends Common {
+  private _viewController: any = null;
+  private _position: number = null;
+
+  get viewController() {
+    if (this._viewController !== null) {
+      return this._viewController;
+    }
+
+    let rootViewController = UIApplication.sharedApplication.keyWindow.rootViewController;
+    if (rootViewController) {
+      this._viewController = rootViewController;
+      return this._viewController;
+    }
+
+    if (UIApplication.sharedApplication.windows.count < 1) {
+      throw new Error('viewController not found');
+    }
+
+    rootViewController = UIApplication.sharedApplication.windows[0].rootViewController;
+    if (rootViewController) {
+      this._viewController = rootViewController;
+      return this._viewController;
+    }
+
+    throw new Error('viewController not found');
+  }
+  set viewController(viewController) {
+    this._viewController = viewController;
+  }
+
+  get position() {
+    if (this._position !== null) {
+      return this._position;
+    }
+    return Position.NAV_BAR_OVERLAY;
+  }
+  set position(position: Position) {
+    this._position = position;
+  }
+
   show(title: string, description: string, type: number): Promise<any> {
     const promise = new Promise((resolve, reject) => {
       try {
+        RMessage.setDefaultViewController(this.viewController);
         RMessage
           .showNotificationWithTitleSubtitleIconImageTypeCustomTypeNameDurationCallbackButtonTitleButtonCallbackAtPositionCanBeDismissedByUser(
             title,
@@ -26,7 +75,7 @@ export class EasyNotificationBanner extends Common {
             () => resolve(),
             null, // button text,
             null, // button callback
-            RMessagePositionNavBarOverlay,
+            this.position,
             true, // user can close
         );
       } catch (error) {
@@ -53,8 +102,8 @@ export class EasyNotificationBanner extends Common {
     return this.show(title, description, RMessageTypeError);
   }
 
-  constructor() {
+  constructor(position: Position = null) {
     super();
-    RMessage.setDefaultViewController(UIApplication.sharedApplication.keyWindow.rootViewController);
+    this.position = position;
   }
 }

@@ -1,6 +1,6 @@
 {
     "name": "nativescript-easy-notification-banner",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "description": "Easy notification banner for NativeScript.",
     "main": "easy-notification-banner",
     "typings": "index.d.ts",
