@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/nativescript-easy-notification-banner.svg) ![npm](https://img.shields.io/npm/dt/nativescript-easy-notification-banner.svg) ![NPM](https://img.shields.io/npm/l/nativescript-easy-notification-banner.svg)
+
 # EasyNotificationBanner
 
 A way to keep the user informed about what happens in your application
