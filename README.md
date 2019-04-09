@@ -1,6 +1,12 @@
-![npm](https://img.shields.io/npm/v/nativescript-easy-notification-banner.svg) ![npm](https://img.shields.io/npm/dt/nativescript-easy-notification-banner.svg) ![NPM](https://img.shields.io/npm/l/nativescript-easy-notification-banner.svg)
-
 # EasyNotificationBanner
+[![NPM version][npm-image]][npm-url]
+[![Downloads][downloads-image]][npm-url]
+[![TotalDownloads][total-downloads-image]][npm-url]
+
+[npm-image]:http://img.shields.io/npm/v/nativescript-easy-notification-banner.svg
+[npm-url]:https://npmjs.org/package/nativescript-easy-notification-banner
+[downloads-image]:http://img.shields.io/npm/dm/nativescript-easy-notification-banner.svg
+[total-downloads-image]:http://img.shields.io/npm/dt/nativescript-easy-notification-banner.svg?label=total%20downloads
 
 A way to keep the user informed about what happens in your application
 
